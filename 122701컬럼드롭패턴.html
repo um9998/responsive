@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컬럼드롭</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font: 1em Arial, "맑은 고딕", 돋움, Doctum, sans-serif;
+      }
+      #wrap {
+        width: 100%;
+      }
+      #box_a {
+        width: 30%;
+        height: 400px;
+        float: left;
+        background: #aaa;
+      }
+      #box_b {
+        width: 50%;
+        float: left;
+        height: 400px;
+        background: #bbb;
+      }
+      #box_c {
+        width: 20%;
+        float: right;
+        height: 400px;
+        background: #ccc;
+      }
+      @media screen and (max-width: 1024px) {
+        #box_b {
+          width: 70%;
+        }
+        #box_c {
+          width: 100%;
+          float: none;
+          clear: left;
+          background: #456;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #box_a {
+          width: 100%;
+          float: none;
+          background: #789;
+        }
+        #box_b {
+          width: 100%;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="box_a"></div>
+      <div id="box_b"></div>
+      <div id="box_c"></div>
+    </div>
+  </body>
+</html>
